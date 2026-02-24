@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import assets from "../assets/assets";
 
@@ -68,11 +69,23 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-3 text-gray-600 dark:text-gray-400 transition-colors duration-500 ease-in-out">
-            <li className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer transition-colors duration-500 ease-in-out">
-              Home
+            <li>
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+              >
+                Home
+              </Link>
             </li>
-            <li className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer transition-colors duration-500 ease-in-out">
-              Projects
+
+            <li>
+              <Link
+                to="/projects"
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+              >
+                Projects
+              </Link>
             </li>
           </ul>
         </div>
