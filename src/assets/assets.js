@@ -33,7 +33,12 @@ import moon_icon from "./moon_icon.svg";
 import explorrre from "./explorrre.png";
 import close_icon_dark from "./close_icon_dark.png";
 import my_photo from "./my_photo.jpeg";
-import github_icon from "./github_icon.png"
+import github_icon from "./github_icon.png";
+import go_blog from "./go_blog.jpeg";
+import thematic from "./thematic.jpeg";
+import adopt_me from "./adopt_me.jpeg";
+import go_lapor from "./go_lapor.png";
+import kos_booking from "./kos_booking.jpeg";
 
 export const company_logos = [
   microsoft_logo,
@@ -45,6 +50,11 @@ export const company_logos = [
 ];
 
 const assets = {
+  kos_booking,
+  go_lapor,
+  adopt_me,
+  thematic,
+  go_blog,
   github_icon,
   my_photo,
   atom,
@@ -92,163 +102,166 @@ export const badgeColors = {
 
 export const workData = [
   {
-    title: "Dashboard management",
+    title: "Go-Blog",
     description:
-      "We help you create marketing strategy that drives results. We help you create marketing strategy that drives results. We help you create marketing strategy that drives results. We help you create marketing strategy that drives results.",
+      "Go-Blog is a modern blogging platform that allows users to write, publish, and read articles on topics such as technology, finance, startups, and lifestyle. The platform includes features such as article management, user authentication, and a comment system to support interactive knowledge sharing.",
     fullDescription:
-      "Full stack dashboard with authentication, analytics, charts, and CRUD features.",
-    image: assets.explorrre,
+      "Go-Blog is a modern blogging platform that allows users to write, publish, and read articles on topics such as technology, finance, startups, and lifestyle. The platform includes features such as article management, user authentication, and a comment system to support interactive knowledge sharing.",
+
+    image: assets.go_blog,
 
     category: "Full Stack",
 
     badges: ["MERN"],
 
-    tags: ["React", "Node.js", "MongoDB", "Express"],
+    tags: ["React", "MongoDB", "Node.js", "Express.js", "Tailwind"],
+
+    live: "https://go-blog-ivory.vercel.app/",
+    github: "https://github.com/ariabintang24",
+  },
+
+  {
+    title: "Thematic Academy",
+    description:
+      "Thematic Academy is a web platform that showcases various training and development programs. It integrates a Dialogflow-powered chatbot that functions as a virtual assistant to help users obtain information about available programs, answer common questions, and support helpdesk services more efficiently.",
+    fullDescription:
+      "Thematic Academy is a web platform that showcases various training and development programs. It integrates a Dialogflow-powered chatbot that functions as a virtual assistant to help users obtain information about available programs, answer common questions, and support helpdesk services more efficiently.",
+    image: assets.thematic,
+
+    category: "Front End",
+
+    badges: ["React"],
+
+    tags: ["React", "Dialogflow", "Tailwind"],
+
+    live: "https://thematic-academy.vercel.app/",
+    github: "https://github.com/ariabintang24",
+  },
+
+  {
+    title: "Explorrre",
+    description:
+      "Explorrre is a digital platform that provides various insights and information about the world, including general knowledge from different countries. The platform is designed to help users explore global information easily through an informative and user-friendly interface.",
+    fullDescription:
+      "Explorrre is a digital platform that provides various insights and information about the world, including general knowledge from different countries. The platform is designed to help users explore global information easily through an informative and user-friendly interface.",
+    image: assets.explorrre,
+
+    category: "Front End",
+
+    badges: ["React"],
+
+    tags: ["React", "Node.js"],
 
     live: "https://explorrre.vercel.app/",
     github: "https://github.com/ariabintang24",
   },
 
   {
-    title: "Landing Page SaaS",
+    title: "Adopt Me",
     description:
-      "We help you create marketing strategy that drives results. We help you create marketing strategy that drives results. We help you create marketing strategy that drives results. We help you create marketing strategy that drives results.",
+      "Adopt Me is a web-based pet adoption platform that allows users to browse available animals and submit adoption requests. Users can upload and manage animal listings, while adoption requests are processed through an approval system managed by administrators using the Filament admin panel. The platform is designed to simplify the adoption process, improve transparency, and help connect potential adopters with animals in need of a new home.",
     fullDescription:
-      "Frontend landing page with animation and responsive layout.",
-
-    image: assets.work_mobile_app,
-
-    category: "Front End",
-
-    badges: ["React"],
-
-    tags: ["React", "Tailwind"],
-
-    live: "#",
-    github: "#",
-  },
-
-  {
-    title: "Fitness app promotion",
-    description: "We help you create marketing strategy that drives results.",
-    fullDescription:
-      "We help you create marketing strategy that drives results. We help you create marketing strategy that drives results. We help you create marketing strategy that drives results. We help you create marketing strategy that drives results.",
-    image: assets.work_fitness_app,
+      "Adopt Me is a web-based pet adoption platform that allows users to browse available animals and submit adoption requests. Users can upload and manage animal listings, while adoption requests are processed through an approval system managed by administrators using the Filament admin panel. The platform is designed to simplify the adoption process, improve transparency, and help connect potential adopters with animals in need of a new home.",
+    image: assets.adopt_me,
 
     category: "Full Stack",
 
     badges: ["Laravel"],
 
-    tags: ["Laravel", "MySQl", "Tailwind", "Breeze", "Midtrans"],
+    tags: ["Laravel", "MySQL", "Tailwind", "Breeze", "Filament", "Spatie"],
 
     live: "#",
-    github: "#",
+    github: "https://github.com/ariabintang24",
   },
 
   // ==============
 
   {
-    title: "Fitness app promotion",
-    description: "We help you create marketing strategy that drives results.",
-    fullDescription:
-      "Full stack fitness application with authentication, subscription system, and Midtrans payment gateway integration. Built with Laravel and Tailwind, this app allows users to manage workout plans, track progress, and subscribe to premium features.",
-    image: assets.work_fitness_app,
-
-    category: "Full Stack",
-
-    badges: ["Laravel"],
-
-    tags: ["Laravel", "MySQL", "Tailwind", "Breeze", "Midtrans"],
-
-    live: "#",
-    github: "#",
-  },
-
-  {
-    title: "E-Commerce Dashboard",
+    title: "Go-Lapor",
     description:
-      "Admin dashboard for managing products, orders, and analytics.",
+      "Go-Lapor is a web-based public complaint system that enables citizens to submit reports or complaints related to public services. The platform is designed to simplify the reporting process, improve transparency, and help institutions manage and respond to community feedback in a more structured way.",
     fullDescription:
-      "Modern admin dashboard with advanced analytics, order tracking, and product management. Built using MERN stack with secure authentication and dynamic charts for business insights.",
-    image: assets.explorrre,
-
-    category: "Full Stack",
-
-    badges: ["MERN"],
-
-    tags: ["React", "Node.js", "MongoDB", "Express", "Chart.js"],
-
-    live: "#",
-    github: "#",
-  },
-
-  {
-    title: "Company Landing Page",
-    description: "Responsive landing page for company branding.",
-    fullDescription:
-      "Modern responsive landing page with smooth animation and optimized performance. Built using React and Tailwind CSS with mobile-first design approach.",
-    image: assets.work_mobile_app,
-
-    category: "Front End",
-
-    badges: ["React"],
-
-    tags: ["React", "Tailwind", "Framer Motion"],
-
-    live: "#",
-    github: "#",
-  },
-
-  {
-    title: "Booking System",
-    description: "Online booking system with real-time availability.",
-    fullDescription:
-      "Full stack booking platform allowing users to schedule appointments, manage availability, and receive notifications. Integrated backend API and secure database.",
-    image: assets.work_fitness_app,
+      "Go-Lapor is a web-based public complaint system that enables citizens to submit reports or complaints related to public services. The platform is designed to simplify the reporting process, improve transparency, and help institutions manage and respond to community feedback in a more structured way.",
+    image: assets.go_lapor,
 
     category: "Full Stack",
 
     badges: ["Laravel"],
 
-    tags: ["Laravel", "MySQL", "Tailwind", "REST API"],
+    tags: ["Laravel", "MySQL", "Spatie", "Bootstrap"],
 
     live: "#",
-    github: "#",
+    github: "https://github.com/ariabintang24",
   },
 
   {
-    title: "Portfolio Website",
-    description: "Personal portfolio website with modern UI.",
+    title: "Kos Booking",
+    description:
+      "Kos Booking is a web-based boarding house reservation system that allows users to browse available rooms, make bookings, and manage their reservation history. The platform integrates the Midtrans payment gateway to support secure online payments and streamline the booking process. Users can easily track their booking history and payment status, while the system ensures a more efficient and organized room reservation experience.",
     fullDescription:
-      "Interactive developer portfolio website with animations, project showcase, contact form, and responsive design. Built with React and Tailwind.",
-    image: assets.work_mobile_app,
-
-    category: "Front End",
-
-    badges: ["React"],
-
-    tags: ["React", "Tailwind", "Framer Motion"],
-
-    live: "#",
-    github: "#",
-  },
-
-  {
-    title: "Chat Application",
-    description: "Real-time chat application with authentication.",
-    fullDescription:
-      "Real-time chat app with secure login, instant messaging, and scalable backend. Uses WebSocket and modern frontend technologies.",
-    image: assets.explorrre,
+      "Kos Booking is a web-based boarding house reservation system that allows users to browse available rooms, make bookings, and manage their reservation history. The platform integrates the Midtrans payment gateway to support secure online payments and streamline the booking process. Users can easily track their booking history and payment status, while the system ensures a more efficient and organized room reservation experience.",
+    image: assets.kos_booking,
 
     category: "Full Stack",
 
-    badges: ["MERN"],
+    badges: ["Laravel"],
 
-    tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+    tags: ["Laravel", "MySQL", "Breeze", "Filament", "Tailwind", "Midtrans"],
 
     live: "#",
-    github: "#",
+    github: "https://github.com/ariabintang24",
   },
+
+  // {
+  //   title: "Booking System",
+  //   description: "Online booking system with real-time availability.",
+  //   fullDescription:
+  //     "Full stack booking platform allowing users to schedule appointments, manage availability, and receive notifications. Integrated backend API and secure database.",
+  //   image: assets.work_fitness_app,
+
+  //   category: "Full Stack",
+
+  //   badges: ["Laravel"],
+
+  //   tags: ["Laravel", "MySQL", "Tailwind", "REST API"],
+
+  //   live: "#",
+  //   github: "#",
+  // },
+
+  // {
+  //   title: "Portfolio Website",
+  //   description: "Personal portfolio website with modern UI.",
+  //   fullDescription:
+  //     "Interactive developer portfolio website with animations, project showcase, contact form, and responsive design. Built with React and Tailwind.",
+  //   image: assets.work_mobile_app,
+
+  //   category: "Front End",
+
+  //   badges: ["React"],
+
+  //   tags: ["React", "Tailwind", "Framer Motion"],
+
+  //   live: "#",
+  //   github: "#",
+  // },
+
+  // {
+  //   title: "Chat Application",
+  //   description: "Real-time chat application with authentication.",
+  //   fullDescription:
+  //     "Real-time chat app with secure login, instant messaging, and scalable backend. Uses WebSocket and modern frontend technologies.",
+  //   image: assets.explorrre,
+
+  //   category: "Full Stack",
+
+  //   badges: ["MERN"],
+
+  //   tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+
+  //   live: "#",
+  //   github: "#",
+  // },
 ];
 
 export const skillsData = {
@@ -337,4 +350,3 @@ export const skillsData = {
     },
   ],
 };
-
