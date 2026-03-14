@@ -150,7 +150,7 @@ export const workData = [
 
     badges: ["React"],
 
-    tags: ["React", "Node.js"],
+    tags: ["React", "Node.js", "Tailwind"],
 
     live: "https://explorrre.vercel.app/",
     github: "https://github.com/ariabintang24",
