@@ -87,7 +87,7 @@ const OurWork = ({ showAll = false }) => {
             key={index}
             onClick={() => setSelectedProject(work)}
             whileHover={{ scale: 1.03 }}
-            className="cursor-pointer rounded-xl p-3 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition bg-white dark:bg-black shadow-md"
+            className="cursor-pointer rounded-xl p-3 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition bg-white dark:bg-black shadow-md flex flex-col h-full"
           >
             {/* ✅ wrapper relative untuk badge overlay */}
             <div className="relative">
