@@ -91,51 +91,55 @@ const Footer = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="flex gap-4">
-          {[
-            {
-              icon: assets.github_icon,
-              link: "https://github.com/ariabintang24",
-              isGithub: true,
-            },
-            {
-              icon: assets.linkedin_icon,
-              link: "https://www.linkedin.com/in/aria-bintang-772146260",
-            },
-            {
-              icon: assets.facebook_icon,
-              link: "https://facebook.com/",
-            },
-            {
-              icon: assets.instagram_icon,
-              link: "https://instagram.com/theweeknd",
-            },
-          ].map((item, i) => (
-            <a
-              key={i}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-        w-10 h-10
-        flex items-center justify-center
-        bg-white dark:bg-black
-        border border-gray-200 dark:border-gray-700
-        rounded-lg
-        shadow-md dark:shadow-black/30
-        hover:scale-110
-        transition-all duration-300 ease-in-out
-      "
-            >
-              <img
-                src={item.icon}
-                alt="social icon"
-                className={`${
-                  item.isGithub ? "w-8" : "w-6"
-                } opacity-80 dark:opacity-90`}
-              />
-            </a>
-          ))}
+        <div className="flex flex-col">
+          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+            Sosial Media
+          </h3>
+
+          <div className="flex gap-4">
+            {[
+              {
+                icon: assets.github_icon,
+                link: "https://github.com/ariabintang24",
+                isGithub: true,
+              },
+              {
+                icon: assets.linkedin_icon,
+                link: "https://www.linkedin.com/in/aria-bintang-772146260",
+              },
+              {
+                icon: assets.facebook_icon,
+                link: "https://facebook.com/",
+              },
+              {
+                icon: assets.instagram_icon,
+                link: "https://instagram.com/theweeknd",
+              },
+            ].map((item, i) => (
+              <a
+                key={i}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+          w-10 h-10
+          flex items-center justify-center
+          bg-white dark:bg-black
+          border border-gray-200 dark:border-gray-700
+          rounded-lg
+          shadow-md dark:shadow-black/30
+          hover:scale-110
+          transition-all duration-300 ease-in-out
+        "
+              >
+                <img
+                  src={item.icon}
+                  alt="social icon"
+                  className={`${item.isGithub ? "w-8" : "w-6"} opacity-80 dark:opacity-90`}
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
