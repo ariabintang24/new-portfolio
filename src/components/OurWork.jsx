@@ -91,10 +91,9 @@ const OurWork = ({ showAll = false }) => {
           >
             {/* ✅ wrapper relative untuk badge overlay */}
             <div className="relative">
-              <img
-                src={work.image}
-                className="rounded-xl border border-gray-200 dark:border-gray-700"
-              />
+              <div className="aspect-[16/9] overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+                <img src={work.image} className="w-full h-full object-cover" />
+              </div>
 
               {/* ✅ badge overlay */}
               <div className="absolute top-2 right-2 flex gap-2 flex-wrap justify-end">
