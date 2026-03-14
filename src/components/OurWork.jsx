@@ -129,7 +129,7 @@ const OurWork = ({ showAll = false }) => {
                 </span>
               ))}
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-2 ">
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-auto line-clamp-2 ">
               {work.description}
             </p>
           </motion.div>
